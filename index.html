@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7596fc8a77.js" crossorigin="anonymous"></script>
+    <title>Javascript Dashboard</title>
+</head>
+<body>
+    <!-- making main container  -->
+    <div class="main">
+        <!-- making first from left div which is menu basically which is menu section in left  -->
+        <section class="menuSection">
+            <!-- making logo in to show on top in menuSection  -->
+            <div class="logo">
+                <!-- js logo  -->
+                <i class="fa-brands fa-js"></i>
+                <h1>Java<span>script</span></h1>
+            </div>
+            <!-- logo div ends here  -->
+
+
+            <!-- making menu items div to show in middle of the menuSection below logo and above logout div  -->
+            <div class="menuItems">
+                <!-- making dashboard container -->
+                    <div class="dashboard">
+                    <!-- dashboard icon  -->
+                    <i class="fa-solid fa-square-check"></i>
+                    <h2>Dashboard</h2>
+
+                </div>
+                <!-- dashboard div ens here  -->
+
+                 <!-- making customers container  -->
+                     <div class="customers">
+                        <!-- customers icon  -->
+                        <i class="fa-solid fa-user"></i>
+                        <h2>Customers</h2>
+
+                    </div>
+                 <!-- customers div ends here  -->
+
+                <!-- making orders container  -->
+                     <div class="orders">
+                        <!-- order icon  -->
+                        <i class="fa-sharp fa-solid fa-bell"></i>
+                        <h2>Orders</h2>
+
+                    </div>
+                <!-- orders div ends here  -->
+
+
+                <!-- making analytics container  -->
+                    <div class="analytics">
+                        <!-- analytics icon  -->
+                        <i class="fa-solid fa-chart-line"></i>
+                        <h2>Analytics</h2>
+
+                    </div>
+                <!-- analytics div ends here  -->
+
+
+                <!-- making message messages container  -->
+                    <div class="messages">
+                        <!-- messages icon  -->
+                        <i class="fa-solid fa-message"></i>
+                        <h2>Messages</h2>
+
+                    </div>
+                <!-- messages div ends here  -->
+
+                <!-- making products container  -->
+                    <div class="products">
+                        <!-- products icon  -->
+                        <i class="fa-brands fa-product-hunt"></i>
+                        <h2>Products</h2>
+
+                    </div>
+                <!-- products div ends here  -->
+
+                <!-- making reports container  -->
+                    <div class="reports">
+                        <!-- report icon  -->
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <h2>Reports</h2>
+
+                    </div>
+                <!-- reports div ends here  -->
+
+                <!-- making settings container  -->
+                    <div class="settings">
+                        <!-- settings icon  -->
+                        <i class="fa-solid fa-gear"></i>
+                        <h2>Settings</h2>
+
+                    </div>
+                <!-- settings div ends here  -->
+
+                <!-- making add products container  -->
+                    <div class="addProducts">
+                        <!-- add product icon  -->
+                        <i class="fa-solid fa-plus"></i>
+                        <h2>Add Product</h2>
+
+                    </div>
+                <!-- Add Products div ends here  -->
+            </div>
+            <!-- menuitems div ends here  -->
+
+            <!-- making logout div to stay on bottom in menu Section below menu items  -->
+            <div class="logout">
+                <!-- logout icon  -->
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <h2>Logout</h2>
+            </div>
+            <!-- logout div ends here  -->
+
+
+
+        </section>     
+        <!-- menu section ends here-->
+
+
+        <!-- making second div which is content section in the middle  -->
+        <section class="contentSection">
+            <!-- dashboard date container  -->
+        <div class="dashboardDate">
+            <h1>Dashboard</h1>
+            <p class="date">date</p>
+        </div>
+        <!-- dashboard date container ends here  -->
+        
+        <!-- sales expense income module container  -->
+        <div class="module">
+            <!-- total sales container  -->
+            <div class="totalSales">
+                <section id="section" class="salesData">
+                    <!-- total sales icon  -->
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <h3>Total Sales</h3>
+                    <h1>$25,024</h1>
+                    <small>Last 24 hours</small>
+                </section>
+                <section id="graph" class="salesGraph">
+                    <svg viewbox = "-50 -40 100 130">
+                        <circle cx="'38" cy='38' r='36'></circle>
+                    </svg>
+                    <div class="number">
+                        <p>81%</p>
+                    </div>
+                   
+                </section>
+            </div>
+            <!-- total sales container ends here  -->
+
+            <!-- total expenses container  -->
+            <div class="totalExpenses">
+                <section id="section" class="expensesData">
+                  <!-- total expenses  -->
+                  <i class="fa-solid fa-chart-simple"></i>
+                    <h3>Total Expenses</h3>
+                    <h1>$14,160</h1>
+                    <small>Last 24 hours</small>
+                </section>
+                <section id="graph" class="expensesGraph">
+                    <svg viewbox = "-50 -40 100 130">
+                        <circle cx="'38" cy='38' r='36'></circle>
+                    </svg>
+                    <div class="number">
+                        <p>62%</p>
+                    </div>
+                   
+                </section>
+            </div>
+            <!-- total expenses container ends here  -->
+
+            <!-- total income container  -->
+            <div class="totalIncome">
+                <section id="section" class="incomeData">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Total Income</h3>
+                    <h1>$10,860</h1>
+                    <small>Last 24 hours</small>
+                </section>
+                <section id="graph" class="incomeGraph">
+                    <svg viewbox = "-50 -40 100 130">
+                        <circle cx="'38" cy='38' r='36'></circle>
+                    </svg>
+                    <div class="number">
+                        <p>44%</p>
+                    </div>
+                    
+                </section>
+            </div>
+            <!-- totalincome container ends here  -->
+        </div>
+        <!-- sales expense income module ends here  -->
+
+        <!-- recent orders container  -->
+    
+            <table class="recentOrders">
+                <tr>
+                    <th>Product Name</th>
+                    <th>Product Number</th>
+                    <th>Payment</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Mini Drone</td>
+                    <td>42342</td>
+                    <td>due</td>
+                    <td>pending</td>
+                    <td>details</td>
+                
+                    
+                    
+                </tr>
+                <tr>
+                    <td>Mouse</td>
+                    <td>63465</td>
+                    <td>paid</td>
+                    <td>declined</td>
+                    <td>details</td>
+                </tr>
+                <tr>
+                    <td>Wide Monitor</td>
+                    <td>63467</td>
+                    <td>paid</td>
+                    <td>delivered</td>
+                    <td>details</td>
+                </tr>
+                <tr>
+                    <td>Keyboard</td>
+                    <td>86589</td>
+                    <td>due</td>
+                    <td>pending</td>
+                    <td>details</td>
+                </tr>
+                <tr>
+                    <td>SSD</td>
+                    <td>75677</td>
+                    <td>pai</td>
+                    <td>pending</td>
+                    <td>details</td>
+                </tr>
+                
+                <tr>
+                    <td>Graphic Card</td>
+                    <td>58968</td>
+                    <td>refunded</td>
+                    <td>delivered</td>
+                    <td>details</td>
+                </tr>
+                <tr>
+                    <td>Adobe XD</td>
+                    <td>87676</td>
+                    <td>refunded</td>
+                    <td>pending</td>
+                    <td>details</td>
+                </tr>
+            </table>
+        
+        <!-- recent orders container ends here  -->
+
+
+        </section>
+        <!-- content section ends here  -->
+
+
+
+        <!-- making third div section which is on far right  -->
+        <section class="userSection"></section>
+        <!-- user section ends here  -->
+
+
+
+    </div> 
+    <!-- main container ends above  -->
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>
+
+<!-- menu icon  -->
+<!-- <i class="fa-solid fa-bars"></i> -->
+
+
+
+<!-- moon icon -->
+<!-- <i class="fa-solid fa-moon"></i> -->
+
+<!-- sun icon  -->
+<!-- <i class="fa-solid fa-sun-bright"></i> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- total income  -->
+<!-- <i class="fa-solid fa-chart-line"></i> -->
+
+
+<!-- online orders icon  -->
+<!-- <i class="fa-solid fa-cart-shopping"></i> -->
+
+<!-- offline orders icon  -->
+<!-- <i class="fa-solid fa-cart-shopping-fast"></i> -->
+
+<!-- new customers icon  -->
+<!-- <i class="fa-solid fa-users"></i> -->
+
+<!-- profile pic  -->
+<!-- <img src="MJ.jpg" alt=""> -->
+
+<!-- member alice pic  -->
+<!-- <img src="Alice.jpg" alt=""> -->
+
+<!-- member dose  -->
+<!-- <img src="dose.jpg" alt=""> -->
+
+<!-- member avgi pic  -->
+<!-- <img src="Avgi.jpg" alt=""> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
