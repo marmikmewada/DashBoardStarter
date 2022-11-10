@@ -144,8 +144,8 @@
                     <small>Last 24 hours</small>
                 </section>
                 <section id="graph" class="salesGraph">
-                    <svg viewbox = "-50 -40 100 130">
-                        <circle cx="'38" cy='38' r='36'></circle>
+                    <svg viewbox = "-10 -50 100 140">
+                        <circle cx="38" cy='38' r='36'></circle>
                     </svg>
                     <div class="number">
                         <p>81%</p>
@@ -165,8 +165,8 @@
                     <small>Last 24 hours</small>
                 </section>
                 <section id="graph" class="expensesGraph">
-                    <svg viewbox = "-50 -40 100 130">
-                        <circle cx="'38" cy='38' r='36'></circle>
+                    <svg viewbox = " -10 -50 100 140">
+                        <circle cx="38" cy='38' r='36'></circle>
                     </svg>
                     <div class="number">
                         <p>62%</p>
@@ -185,8 +185,8 @@
                     <small>Last 24 hours</small>
                 </section>
                 <section id="graph" class="incomeGraph">
-                    <svg viewbox = "-50 -40 100 130">
-                        <circle cx="'38" cy='38' r='36'></circle>
+                    <svg viewbox =  "-10 -50 100 140">
+                        <circle cx="38" cy='38' r='36'></circle>
                     </svg>
                     <div class="number">
                         <p>44%</p>
@@ -242,7 +242,7 @@
                 <tr>
                     <td>SSD</td>
                     <td>75677</td>
-                    <td>pai</td>
+                    <td>paid</td>
                     <td>pending</td>
                     <td>details</td>
                 </tr>
@@ -272,7 +272,110 @@
 
 
         <!-- making third div section which is on far right  -->
-        <section class="userSection"></section>
+        <section class="userSection">
+            <!-- profile div container starts here  -->
+            <div class="profile">
+                <!-- div day night mode starts here  -->
+                    <div class="dayNightMode">
+                        <!-- sun icon  -->
+                        <i id="modeChange" class="fa-solid fa-sun"></i>
+                        <!-- moon icon -->
+                        <i class="fa-solid fa-moon"></i>
+
+                    </div>
+                <!-- div daynight mode ends here  -->
+                
+                <!-- div profile details starts here  -->
+                <div class="profileDetails">
+                    <div class="smallProfileContainer">
+                        <p>Hey<span>MJ</span></p>
+                        <small>Admin</small>
+                    </div>
+                    <div class="smallProfileImageContainer">
+                        <!-- profile pic  -->
+                        <img src="MJ.jpg" alt="">
+                    </div>
+                </div>
+                <h1>Recent Updates</h1>
+                <!-- div profile details ends here  -->
+            </div>
+            <!-- profile div container ends here  -->
+
+            <!-- recentUpdates div container starts here  -->
+            <div class="recentUpdates">
+                <div class="userOne">
+                    <div class="profilePictureContainer">
+                        <!-- member alice pic  -->
+                    <img style="height:3rem ;width:3rem;"
+                    src="Alice.jpg" alt="">
+                    </div>
+                    <div class="messagesProfile">
+                        <p><span>Alice</span> received her order of dual monitor</p>
+                        <small>3 minutes ago</small>
+                    </div>
+                </div>
+                <div class="userTwo">
+                    <div class="profilePictureContainer">
+                        <!-- member dose  -->
+                        <img style="height:3rem ;width:3rem;" src="dose.jpg" alt="">
+
+                    </div>
+                    <div class="messagesProfile">
+                        <p><span>Dose</span> received his order of 512GB SSD</p>
+                        <small>5 minutes ago</small>
+                    </div>
+                   
+                </div>
+                <div class="userThree">
+                    <div class="profilePictureContainer">
+                        <!-- member avgi pic  -->
+                        <img style="height:3rem ;width:3rem;" src="Avgi.jpg" alt="">
+                    </div>
+                    <div class="messagesProfile">
+                        <p><span>Avgi</span> received her order of souvalaki</p>
+                        <small>7 minutes ago</small>
+                    </div>
+                </div>
+            </div>
+            <!-- recent updates div container ends here  -->
+            
+            <!-- sales analytics div container starts here  -->
+            <div class="salesAnalytics">
+                <h1>Sales Analytics</h1>
+                <div class="ordersContainer">
+                    <div class="onlineorders">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="details">
+                            <p>Online Orders</p>
+                            <small>Last 24 Hours</small>
+                        </div>
+                        <p class="perc"><span>+39%</span></p>
+                        <p class="numb">3847</p>
+                    </div>
+                    <div class="offlineorders">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <div class="details">
+                            <p>Offline Orders</p>
+                            <small>Last 24 Hours</small>
+                        </div>
+                        <p class="perc"><span>-17%</span></p>
+                        <p class="numb">1100</p>
+                    </div>
+                    <div class="newcustomers">
+                        <i class="fa-solid fa-users"></i>
+                        <div class="details">
+                            <p>New Customers</p>
+                            <small>Last 24 Hours</small>
+                        </div>
+                        <p class="perc"><span>+28%</span></p>
+                        <p class="numb">849</p>
+                    </div>
+                </div>
+                <div class="addproduct"></div>
+
+            </div>
+            <!-- sales analytics div container ends here  -->
+        </section>
         <!-- user section ends here  -->
 
 
@@ -290,11 +393,7 @@
 
 
 
-<!-- moon icon -->
-<!-- <i class="fa-solid fa-moon"></i> -->
 
-<!-- sun icon  -->
-<!-- <i class="fa-solid fa-sun-bright"></i> -->
 
 
 
@@ -323,25 +422,18 @@
 
 
 <!-- online orders icon  -->
-<!-- <i class="fa-solid fa-cart-shopping"></i> -->
+
 
 <!-- offline orders icon  -->
-<!-- <i class="fa-solid fa-cart-shopping-fast"></i> -->
 
 <!-- new customers icon  -->
-<!-- <i class="fa-solid fa-users"></i> -->
 
-<!-- profile pic  -->
-<!-- <img src="MJ.jpg" alt=""> -->
+
 
 <!-- member alice pic  -->
 <!-- <img src="Alice.jpg" alt=""> -->
 
-<!-- member dose  -->
-<!-- <img src="dose.jpg" alt=""> -->
 
-<!-- member avgi pic  -->
-<!-- <img src="Avgi.jpg" alt=""> -->
 
 
 
